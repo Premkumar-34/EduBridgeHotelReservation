@@ -1,0 +1,229 @@
+/* styles/AdminDashboard.css */
+
+.admin-dashboard {
+  max-width: 1100px;
+  margin: 2rem auto 4rem;
+  padding: 1rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  background: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.admin-dashboard__heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 0.4rem;
+  color: #004d99;
+}
+
+.admin-dashboard__form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background: #fafafa;
+  padding: 1.2rem 1.5rem;
+  border-radius: 15px;
+  box-shadow: inset 0 0 10px rgba(0, 123, 255, 0.1);
+}
+
+.admin-dashboard__form input {
+  flex: 1 1 200px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 1.6px solid #ccc;
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.admin-dashboard__form input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
+}
+
+.btn {
+  padding: 0.7rem 1.6rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+  user-select: none;
+}
+
+.btn-submit {
+  background: linear-gradient(90deg, #007bff 0%, #00d4ff 100%);
+  color: white;
+  align-self: center;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(90deg, #0056b3 0%, #00a3cc 100%);
+}
+
+.btn-cancel {
+  background: #e0e0e0;
+  color: #444;
+  align-self: center;
+  margin-left: 1rem;
+}
+
+.btn-cancel:hover {
+  background: #bbb;
+}
+
+.admin-dashboard__hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.admin-dashboard__hotel-item {
+  position: relative;
+  width: 260px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-delete {
+  margin-top: 1rem;
+  background: #ff4c4c;
+  border: none;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.25s ease;
+  align-self: center;
+}
+
+.btn-delete:hover {
+  background: #cc0000;
+}
+
+.admin-dashboard__booking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.admin-dashboard__booking-card {
+  background: #f5faff;
+  border-radius: 15px;
+  padding: 1rem 1.3rem;
+  box-shadow: inset 0 0 12px rgba(0, 123, 255, 0.15);
+  font-size: 1rem;
+  line-height: 1.4;
+  position: relative;
+}
+
+.admin-dashboard__booking-card b {
+  color: #004d99;
+}
+
+.admin-dashboard__booking-card button {
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.8rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  user-select: none;
+}
+
+.btn-approve {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-approve:hover {
+  background-color: #1e7e34;
+}
+
+.btn-reject {
+  background-color: #dc3545;
+  color: white;
+  margin-left: 0.5rem;
+}
+
+.btn-reject:hover {
+  background-color: #a71d2a;
+}
+
+.btn-details {
+  background: #007bff;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
+}
+
+.btn-details:hover {
+  background: #0056b3;
+}
+
+.admin-dashboard__user-details {
+  max-width: 400px;
+  margin: 0 auto 2rem;
+  padding: 1.5rem 2rem;
+  background: white;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  color: #222;
+}
+
+.admin-dashboard__user-details h3 {
+  margin-bottom: 1rem;
+  color: #004d99;
+  font-weight: 700;
+}
+
+.admin-dashboard__user-details p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+.btn-close {
+  margin-top: 1rem;
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.4rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.btn-close:hover {
+  background: #545b62;
+}
+
+@media (max-width: 720px) {
+  .admin-dashboard__hotel-list {
+    justify-content: center;
+  }
+  .admin-dashboard__hotel-item {
+    width: 90%;
+  }
+  .admin-dashboard__form {
+    flex-direction: column;
+  }
+  .admin-dashboard__form input {
+    flex: 1 1 100%;
+  }
+}
